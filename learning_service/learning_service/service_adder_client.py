@@ -5,7 +5,7 @@
 @作者: 古月居(www.guyuehome.com)
 @说明: ROS2服务示例-发送两个加数，请求加法器计算
 """
-
+# 面向过程编程方法
 import sys
 
 import rclpy                                                                      # ROS2 Python接口库
