@@ -1,5 +1,5 @@
 # ROS2入门21讲 · 古月
-
+- 测试git命令
 - 课程视频：[https://class.guyuehome.com/detail/p_628f4288e4b01c509ab5bc7a/6](https://class.guyuehome.com/detail/p_628f4288e4b01c509ab5bc7a/6)
 - 图文教程：[https://book.guyuehome.com/](https://book.guyuehome.com/)
 - 课程问答：[https://www.guyuehome.com/Bubble/circleDetail/id/90/](https://www.guyuehome.com/Bubble/circleDetail/id/90/)
