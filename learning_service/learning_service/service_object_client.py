@@ -27,6 +27,7 @@ def main(args=None):
     node = objectClient("service_object_client")       # 创建ROS2节点对象并进行初始化
     node.send_request()
     
+    # 话题需要对话，故需要验证是否有回应
     while rclpy.ok():
         rclpy.spin_once(node)
 
