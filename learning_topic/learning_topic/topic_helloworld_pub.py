@@ -6,10 +6,14 @@
 @说明: ROS2话题示例-发布“Hello World”话题
 """
 
+
 import rclpy                                     # ROS2 Python接口库
 from rclpy.node import Node                      # ROS2 节点类
 from std_msgs.msg import String                  # 字符串消息类型
 
+# 1.创建发布者对象
+# 2.创建并填充话题消息
+# 3.发布话题消息
 """
 创建一个发布者节点
 """
@@ -25,10 +29,15 @@ class PublisherNode(Node):
         msg.data = 'Hello World'                                  # 填充消息对象中的消息数据
         self.pub.publish(msg)                                     # 发布话题消息
         self.get_logger().info('Publishing: "%s"' % msg.data)     # 输出日志信息，提示已经完成话题发布
-        
+
+
+# 1.编程接口初始化
+# 2.创建节点并初始化
+# 3.销毁节点并关闭接口 
 def main(args=None):                                 # ROS2节点主入口main函数
     rclpy.init(args=args)                            # ROS2 Python接口初始化
     node = PublisherNode("topic_helloworld_pub")     # 创建ROS2节点对象并进行初始化
     rclpy.spin(node)                                 # 循环等待ROS2退出
     node.destroy_node()                              # 销毁节点对象
     rclpy.shutdown()                                 # 关闭ROS2 Python接口
+

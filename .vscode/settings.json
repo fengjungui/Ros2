@@ -30,5 +30,6 @@
         "/home/robot/dev_ws/install/learning_gazebo/lib/python3.10/site-packages",
         "/opt/ros/humble/lib/python3.10/site-packages",
         "/opt/ros/humble/local/lib/python3.10/dist-packages"
-    ]
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/learning_pkg_c"
 }
