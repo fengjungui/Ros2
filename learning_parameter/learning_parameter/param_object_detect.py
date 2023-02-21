@@ -26,6 +26,8 @@ class ImageSubscriber(Node):
                   'image_raw', self.listener_callback, 10) 
     self.cv_bridge = CvBridge()                             # 创建一个图像转换对象，用于OpenCV图像与ROS的图像消息的互相转换
 
+
+    # 创建参数用于修改需要检测红色的阈值范围
     self.declare_parameter('red_h_upper', 0)                # 创建一个参数，表示阈值上限
     self.declare_parameter('red_h_lower', 0)                # 创建一个参数，表示阈值下限
     
