@@ -28,7 +28,7 @@ class MoveCircleActionServer(Node):
 
         for i in range(0, 360, 30):                     # 从0到360度，执行圆周运动，并周期反馈信息
             feedback_msg.state = i                      # 创建反馈信息，表示当前执行到的角度
-            self.get_logger().info('Publishing feedback: %d' % feedback_msg.state)
+            self.get_logger().info(f'Publishing feedback: {feedback_msg.state}')
             goal_handle.publish_feedback(feedback_msg)  # 发布反馈信息
             time.sleep(0.5)
 
